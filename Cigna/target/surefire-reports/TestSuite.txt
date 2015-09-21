@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 76.005 sec <<< FAILURE! - in TestSuite
+SearchItems(CignaTest.Search)  Time elapsed: 0.014 sec  <<< FAILURE!
+java.io.FileNotFoundException: Cigna\Data\file1.xls (The system cannot find the path specified)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at util.DataReader.fileReader(DataReader.java:27)
+	at CignaTest.Search.SearchItems(Search.java:21)
+

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="CNN App running on Firefox Browser">
+
+    <parameter name="useSauceLab" value="false"/>
+    <parameter name="userName" value="your user name"/>
+    <parameter name="key" value="your access key"/>
+    <parameter name="appUrl" value="http://www.cnn.com"/>
+    <parameter name="os" value="Windows 8"/>
+    <parameter name="browserName" value="firefox"/>
+    <parameter name="browserVersion" value="39.0"/>
+
+
+    <test name="TableData Read">
+        <classes>
+            <!--<class name="CnnNews.Search"/>-->
+            <class name="CnnNews.navigate"/>
+            <class name="CnnNews.Search"/>
+
+        </classes>
+
+    </test>
+
+</suite>

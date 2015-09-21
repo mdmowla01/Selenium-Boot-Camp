@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [CNN App running on Firefox Browser]">
+  <parameter name="useSauceLab" value="false"/>
+  <parameter name="os" value="Windows 8"/>
+  <parameter name="browserVersion" value="39.0"/>
+  <parameter name="browserName" value="firefox"/>
+  <parameter name="appUrl" value="http://www.cigna.com/"/>
+  <parameter name="userName" value="your user name"/>
+  <parameter name="key" value="your access key"/>
+  <test name="TableData Read(failed)">
+    <classes>
+      <class name="CignaTest.Search">
+        <methods>
+          <include name="setUp"/>
+          <include name="SearchItems"/>
+          <include name="cleanUp"/>
+        </methods>
+      </class> <!-- CignaTest.Search -->
+      <class name="CignaTest.GlobalProducts">
+        <methods>
+          <include name="setUp"/>
+          <include name="cleanUp"/>
+        </methods>
+      </class> <!-- CignaTest.GlobalProducts -->
+      <class name="CignaTest.navigate">
+        <methods>
+          <include name="setUp"/>
+          <include name="cleanUp"/>
+        </methods>
+      </class> <!-- CignaTest.navigate -->
+    </classes>
+  </test> <!-- TableData Read(failed) -->
+</suite> <!-- Failed suite [CNN App running on Firefox Browser] -->
